@@ -71,9 +71,10 @@ def count_down(count):
 window = Tk()
 window.title("Pomodoro Timer")
 window.config(padx=100, pady=50, bg=YELLOW)
+window.iconbitmap(r"C:\Users\Gurbax\PycharmProjects\Pomodoro-Timer\icons\tomato.ico")
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="icons/tomato.png")
+tomato_img = PhotoImage(file=r"C:\Users\Gurbax\PycharmProjects\Pomodoro-Timer\icons\tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", font=(FONT_NAME, 22, "bold"), fill="white")
 canvas.grid(row=1, column=1)
